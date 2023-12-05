@@ -3,7 +3,7 @@
 class Product
 {
     public string $price;
-    public int $quantity;
+    public string $quantity;
 
 
 
@@ -13,9 +13,9 @@ class Product
         $this->quantity = $quantity;
     }
 
-    /*public function getPrice($price)
+    public function getPrice($price)
     {
         $price->rand(5, 35) . '$';
-    }*/
+    }
 }
 ?>

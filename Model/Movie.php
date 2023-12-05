@@ -47,7 +47,7 @@ class Movie extends Product
         $image = $this->poster_path;
         $title = $this->title;
         $content = substr($this->overview, 0, 100) . '...';
-        $custom = $this->vote_average;
+        $custom = $this->vote_average . 'media dei voti dei clienti';
         $price = $this->price;
         $quantity = $this->quantity;
         //$genre = $this->formatGenres();
@@ -65,7 +65,7 @@ class Movie extends Product
 
 
         foreach ($movieList as $item) {
-            $movies[] = new Movie($item['id'], $item['title'], $item['overview'], $item['vote_average'], $item['poster_path'], $item['original_language'], '12 $', 20);
+            $movies[] = new Movie($item['id'], $item['title'], $item['overview'], $item['vote_average'], $item['poster_path'], $item['original_language'], '12 $', '8 pezzi disponibili');
 
         }
         return $movies;

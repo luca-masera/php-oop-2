@@ -42,7 +42,7 @@ class Book extends Product
 
 
         foreach ($boksList as $item) {
-            $books[] = new Book($item['title'], $item['longDescription'], $item['thumbnailUrl'], '12 $', 20);
+            $books[] = new Book($item['title'], $item['longDescription'], $item['thumbnailUrl'], '12 $', '20 pezzi disponibili');
 
         }
         return $books;

@@ -9,9 +9,14 @@
                 <?= $content ?>
             </p>
 
-            <div class="d-flex justify-content-between align-items-flex-start">
-                <?= $price ?>
-                <?= $quantity ?>
+            <div class="d-flex flex-column ">
+                <span>
+                    <?= $price ?>
+                </span>
+                <span>
+                    <?= $quantity ?>
+                </span>
+
             </div>
             <div>
 

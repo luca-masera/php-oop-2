@@ -12,9 +12,13 @@
             <div class="d-flex justify-content-between align-items-flex-start">
                 <?= $custom ?>
             </div>
-            <div>
-                <?= $price ?>
-                <?= $quantity ?>
+            <div class="d-flex flex-column ">
+                <span>
+                    <?= $price ?>
+                </span>
+                <span>
+                    <?= $quantity ?>
+                </span>
 
             </div>
 

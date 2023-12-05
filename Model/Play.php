@@ -41,7 +41,7 @@ class Steam extends Product
 
 
         foreach ($playsList as $item) {
-            $plays[] = new Steam($item['name'], $item['playtime_forever'], $item['img_icon_url'], '12 $', 20);
+            $plays[] = new Steam($item['name'], $item['playtime_forever'], $item['img_icon_url'], '12 $', '15 pezzi disponibili');
 
         }
         return $plays;
