@@ -1,5 +1,5 @@
 <?php
-//include __DIR__ . 'Genre.php';
+
 include __DIR__ . '/Product.php';
 
 class Book extends Product
@@ -49,11 +49,5 @@ class Book extends Product
     }
 
 }
-
-
-
-
-
-
 
 ?>
