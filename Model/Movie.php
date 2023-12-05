@@ -55,6 +55,7 @@ class Movie extends Product
 
     }
 
+
     public static function create()
     {
         $movieString = file_get_contents(__DIR__ . '/movie_db.json');
@@ -70,9 +71,8 @@ class Movie extends Product
         return $movies;
     }
 
-
-
 }
+
 
 
 
