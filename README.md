@@ -9,3 +9,7 @@ prepariamo una pagina per ogni tipo (classe di oggetti) e creiamo in header dei 
 BONUS :
 Creare una navbar stilizzata in header per la navigazione e aggiungere un logo personalizzato
 Usare lo stesso template della card per tutti i prodotti
+
+Esercizio del 6/12/2023:
+oggi continuate a lavorare nella stessa repo di ieri aggiungendo almeno un trait ed un exception al vostro shop!
+nome repo di ieri: php-oop-2

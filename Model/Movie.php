@@ -1,9 +1,11 @@
 <?php
 //include __DIR__ . 'Genre.php';
 include __DIR__ . '/Product.php';
+include __DIR__ . '/../Trait/printMovie.php';
 
 class Movie extends Product
 {
+
     private int $id;
     private string $title;
     private string $overview;
@@ -28,7 +30,7 @@ class Movie extends Product
         //$this->genres = $genres;
 
     }
-
+    use printMovie;
     /*public function formatGenres()
     {
         $template = "<p>";
@@ -42,18 +44,7 @@ class Movie extends Product
 
     }*/
 
-    public function printCard()
-    {
-        $image = $this->poster_path;
-        $title = $this->title;
-        $content = substr($this->overview, 0, 100) . '...';
-        $custom = $this->vote_average . 'media dei voti dei clienti';
-        $price = $this->price;
-        $quantity = $this->quantity;
-        //$genre = $this->formatGenres();
-        include __DIR__ . '/../Views/card.php';
 
-    }
 
 
     public static function create()
@@ -72,11 +63,5 @@ class Movie extends Product
     }
 
 }
-
-
-
-
-
-
 
 ?>
