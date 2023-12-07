@@ -6,7 +6,7 @@
                 <?= $title ?>
             </h5>
             <p class="card-text">
-                <?= $content ?>
+                <?= $overview ?>
             </p>
 
             <div class="d-flex justify-content-between align-items-flex-start">

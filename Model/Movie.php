@@ -31,17 +31,14 @@ class Movie extends Product
 
     }
     use printMovie;
-    public function longCaracter()
+    public function longCaracter($overview)
     {
-        try {
 
-            if ($this->overview > strlen(30)) {
-                throw new Exception('La descrizione è troppo lunga');
-            }
-
-        } catch (Exception $e) {
-            return $e->getMessage();
+        if (strlen($overview) > 200) {
+            throw new Exception('La descrizione è troppo lunga');
         }
+        $this->overview = $overview;
+
     }
 
 
