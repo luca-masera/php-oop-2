@@ -26,7 +26,7 @@ class Book extends Product
         $image = $this->thumbnailUrl;
         $title = $this->title;
         $content = substr($this->longDescription, 0, 100) . '...';
-        $price = $this->price;
+        $price = rand(5, 40) . '$';
         $quantity = $this->quantity;
         include __DIR__ . '/../Views/cardB.php';
 

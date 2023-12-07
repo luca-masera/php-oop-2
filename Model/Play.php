@@ -26,7 +26,7 @@ class Steam extends Product
         $image = $this->img_icon_url;
         $title = $this->name;
         $content = $this->playtime_forever;
-        $price = $this->price;
+        $price = rand(5, 40) . '$';
         $quantity = $this->quantity;
         include __DIR__ . '/../Views/cardB.php';
 
